@@ -19,11 +19,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="550" />
-                            <entry key="outputName" value="ic_rg_rec" />
+                            <entry key="height" value="57" />
+                            <entry key="outputName" value="ic_rg_btn" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\KMJ\Desktop\drawable\rectangle_2_copy.svg" />
-                            <entry key="width" value="344" />
+                            <entry key="sourceFile" value="C:\Users\KMJ\Desktop\drawable\group.svg" />
+                            <entry key="width" value="296" />
                           </map>
                         </option>
                       </PersistentState>
