@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <TextView
+        android:id="@+id/settings_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/notosanscjkkr_black"
+        android:text="설정"
+        android:textColor="#5b5b5b"
+        android:textSize="29sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/ic_settings_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_t1" />
+
+    <TextView
+        android:id="@+id/settings_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/notosanscjkkr_black"
+        android:text="로그아웃"
+        android:textColor="#5b5b5b"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="@id/settings_t1"
+        app:layout_constraintTop_toBottomOf="@id/settings_l1" />
+
+    <TextView
+        android:id="@+id/settings_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Warmplant님 환영합니다."
+        android:textColor="#aaaaaa"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/settings_t1"
+        app:layout_constraintTop_toBottomOf="@id/settings_t2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_circle"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="26dp"
+        app:layout_constraintTop_toTopOf="@id/settings_t2"
+        app:layout_constraintBottom_toBottomOf="@id/settings_t3"
+        android:layout_marginLeft="118dp"
+        android:src="@drawable/ic_settings_circle" />
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_icon_9"
+        app:layout_constraintTop_toTopOf="@id/settings_circle"
+        app:layout_constraintBottom_toBottomOf="@id/settings_circle"
+        app:layout_constraintLeft_toLeftOf="@id/settings_circle"
+        app:layout_constraintRight_toRightOf="@id/settings_circle"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/settings_l2"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/settings_t3"
+        android:background="#c5fafafa"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#5b5b5b"
+        android:text="내 식물 기르기"
+        android:fontFamily="@font/notosanscjkkr_black"
+        app:layout_constraintLeft_toLeftOf="@id/settings_t1"
+        android:id="@+id/settings_t4"
+        app:layout_constraintTop_toBottomOf="@id/settings_l2"
+        android:layout_marginTop="44dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#aaaaaa"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        app:layout_constraintLeft_toLeftOf="@id/settings_t1"
+        android:id="@+id/settings_t5"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/settings_t4"
+        android:text="식물에 대한 정보를 제공합니다."
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_settings_circle"
+        android:id="@+id/settings_c2"
+        app:layout_constraintLeft_toLeftOf="@id/settings_circle"
+        app:layout_constraintTop_toTopOf="@id/settings_t4"
+        app:layout_constraintBottom_toBottomOf="@id/settings_t5"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_plant"
+        app:layout_constraintTop_toTopOf="@id/settings_c2"
+        app:layout_constraintLeft_toLeftOf="@id/settings_c2"
+        app:layout_constraintRight_toRightOf="@id/settings_c2"
+        app:layout_constraintBottom_toBottomOf="@id/settings_c2"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/settings_l3"
+        android:layout_marginTop="58dp"
+        app:layout_constraintTop_toBottomOf="@+id/settings_t5"
+        android:background="#c5fafafa"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#5b5b5b"
+        android:text="보호자 정보"
+        android:id="@+id/settings_t6"
+        android:fontFamily="@font/notosanscjkkr_black"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintTop_toBottomOf="@id/settings_l3"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/settings_t7"
+        android:textColor="#aaaaaa"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        app:layout_constraintLeft_toLeftOf="@id/settings_t6"
+        app:layout_constraintTop_toBottomOf="@id/settings_t6"
+        android:text="보호자의 정보를 제공합니다."
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_settings_circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="11dp"
+        android:id="@+id/settings_people"
+        app:layout_constraintBottom_toBottomOf="@id/settings_t7"
+        app:layout_constraintTop_toTopOf="@id/settings_t6"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/noun_parent_1375546"
+        app:layout_constraintTop_toTopOf="@id/settings_people"
+        app:layout_constraintLeft_toLeftOf="@id/settings_people"
+        app:layout_constraintRight_toRightOf="@id/settings_people"
+        app:layout_constraintBottom_toBottomOf="@id/settings_people"/>
+</android.support.constraint.ConstraintLayout>

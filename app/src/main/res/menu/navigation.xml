@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_navigation_pot"
+        android:title="화분"
+        android:id="@+id/navigation_pot" />
+    <item
+        android:icon="@drawable/ic_navigation_pot"
+        android:title="대화"
+        android:id="@+id/navigation_mike" />
+    <item
+        android:icon="@drawable/ic_navigation_book"
+        android:title="독서와 운동"
+        android:id="@+id/navigation_book" />
+    <item
+        android:icon="@drawable/ic_navigation_settings"
+        android:title="설정"
+        android:id="@+id/navigation_settings" />
+</menu>

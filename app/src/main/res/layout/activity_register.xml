@@ -27,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="27sp"
+        android:fontFamily="@font/notosanscjkkr_black"
         android:textColor="#ffffff"
         android:text="따뜻한 화분"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="13sp"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:textColor="#ffffff"
        android:text="우울증 예방 솔루션"
         android:layout_marginTop="1dp"
@@ -59,6 +61,7 @@
 
     <TextView
         android:id="@+id/rg_t1"
+        android:fontFamily="@font/notosanscjkkr_bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
@@ -76,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="사용자 이름"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:textColor="#b9b9b9"
         android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
@@ -87,6 +91,7 @@
         android:id="@+id/rg_t3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:layout_marginLeft="144dp"
         android:layout_marginTop="16dp"
         android:text="성별"
@@ -100,6 +105,7 @@
     <EditText
         android:id="@+id/rg_input_name"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="김화분"
@@ -145,6 +151,7 @@
         android:textColor="#b9b9b9"
         android:id="@+id/rg_t4"
         android:text="생년월일"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:layout_marginTop="11dp"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         app:layout_constraintTop_toBottomOf="@id/rg_input_name"
@@ -155,6 +162,7 @@
         android:textSize="18sp"
         android:textColor="#242424"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/notosanscjkkr_medium"
         tools:text="2002년 11월 06일"
         android:id="@+id/rg_input_birth"
         android:background="@null"
@@ -173,6 +181,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:textColor="#b9b9b9"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         app:layout_constraintTop_toBottomOf="@id/rg_longline1"
@@ -186,6 +195,7 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textColor="#242424"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:background="@null"
         android:id="@+id/rg_input_id"
         android:text="warmplant"
@@ -197,6 +207,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         android:id="@+id/rg_longline2"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:layout_marginTop="4dp"
         app:layout_constraintTop_toBottomOf="@id/rg_input_id"
         android:src="@drawable/ic_rg_longline"/>
@@ -206,6 +217,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#b9b9b9"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:text="비밀번호"
         android:id="@+id/rg_t6"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
@@ -216,6 +228,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:textSize="18sp"
         android:id="@+id/rg_input_pw"
         android:textColor="#242424"
@@ -229,6 +242,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         android:id="@+id/rg_longline3"
+
         android:layout_marginTop="4dp"
         app:layout_constraintTop_toBottomOf="@id/rg_input_pw"
         android:src="@drawable/ic_rg_longline"/>
@@ -242,6 +256,7 @@
         android:id="@+id/rg_t7"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         android:layout_marginTop="12dp"
+        android:fontFamily="@font/notosanscjkkr_medium"
         app:layout_constraintTop_toBottomOf="@id/rg_longline3"
 
         />
@@ -252,6 +267,7 @@
         android:id="@+id/rg_input_pwcheck"
         android:textColor="#242424"
         android:hint="***********"
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         app:layout_constraintTop_toBottomOf="@id/rg_t7"
@@ -271,6 +287,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="34dp"
         android:text="회원가입"
+        android:fontFamily="@font/notosanscjkkr_black"
         android:textColor="#ffffff"
         android:textSize="18sp"
 
