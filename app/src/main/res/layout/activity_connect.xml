@@ -36,18 +36,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <com.loopeer.shadow.ShadowView
         android:id="@+id/shadow_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
         android:foreground="?attr/selectableItemBackground"
         app:cornerRadius="200dp"
-        app:shadowColor="#17000000"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="124dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadowColor="#17000000"
         app:shadowDy="6"
         app:shadowMargin="6dp"
         app:shadowRadius="6dp">
@@ -63,33 +62,137 @@
             android:paddingTop="29dp"
             android:src="@drawable/noun_devices_159064" />
     </com.loopeer.shadow.ShadowView>
+
     <TextView
+        android:id="@+id/connect_t2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="23sp"
-        android:textColor="#2fec8c"
-        android:id="@+id/connect_t2"
-        app:layout_constraintTop_toBottomOf="@id/shadow_view"
-        android:fontFamily="@font/notosanscjkkr_black"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="63dp"
+        android:fontFamily="@font/notosanscjkkr_black"
+        android:text="제품의 코드를 입력해주세요."
+        android:textColor="#2fec8c"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
 
-        android:text="제품의 코드를 입력해주세요."
-        />
+        app:layout_constraintTop_toBottomOf="@id/shadow_view" />
+
     <TextView
+        android:id="@+id/connect_t3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:textColor="#919191"
-        android:id="@+id/connect_t3"
-        app:layout_constraintTop_toBottomOf="@id/connect_t2"
         android:layout_marginTop="9dp"
+        android:text="제품코드는 제품 하단 스티커에 있습니다."
+        android:textColor="#919191"
+        android:textSize="17sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="제품코드는 제품 하단 스티커에 있습니다."
-        />
-    <LinearLayout
-        android:layout_width=""
-        android:layout_height=""></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@id/connect_t2" />
+
+    <EditText
+        android:id="@+id/connect_e1"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="13dp"
+        android:background="@null"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@id/connect_t4"
+        app:layout_constraintRight_toLeftOf="@id/connect_t4"
+        app:layout_constraintTop_toTopOf="@id/connect_t4" />
+
+    <TextView
+        android:id="@+id/connect_t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="46dp"
+        android:text="-"
+        android:textColor="#969696"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/connect_l1"
+        app:layout_constraintTop_toBottomOf="@id/connect_t3" />
+
+    <EditText
+        android:id="@+id/connect_e2"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:maxLength="4"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/connect_t4"
+        app:layout_constraintLeft_toRightOf="@id/connect_t4"
+        app:layout_constraintRight_toLeftOf="@id/connect_t5"
+        app:layout_constraintTop_toTopOf="@id/connect_t4" />
+
+    <TextView
+        android:id="@+id/connect_t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="-"
+        android:textColor="#969696"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/connect_t4"
+        app:layout_constraintRight_toLeftOf="@id/connect_t6"
+        app:layout_constraintTop_toBottomOf="@id/connect_t3" />
+
+    <EditText
+        android:id="@+id/connect_e3"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:maxLength="4"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/connect_t4"
+        app:layout_constraintLeft_toRightOf="@id/connect_t5"
+        app:layout_constraintRight_toLeftOf="@id/connect_t6"
+        app:layout_constraintTop_toTopOf="@id/connect_t4" />
+
+    <TextView
+        android:id="@+id/connect_t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="67dp"
+        android:layout_marginTop="46dp"
+        android:text="-"
+        android:textColor="#969696"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="@id/connect_l1"
+        app:layout_constraintTop_toBottomOf="@id/connect_t3" />
+
+    <EditText
+        android:id="@+id/connect_e4"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="13dp"
+        android:background="@null"
+        android:maxLength="4"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/connect_t4"
+        app:layout_constraintLeft_toRightOf="@id/connect_t6"
+        app:layout_constraintTop_toTopOf="@id/connect_t4" />
+
+    <ImageView
+        android:id="@+id/connect_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:src="@drawable/ic_connect_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/connect_t3" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_connect_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connect_l1"
+        android:text="기기 연동"
+        android:fontFamily="@font/notosanscjkkr_black"
+        android:textSize="19sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="54dp"/>
 </android.support.constraint.ConstraintLayout>
