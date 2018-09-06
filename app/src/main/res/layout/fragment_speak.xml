@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_background"
+    tools:context=".SpeakFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화분과의 대화"
+        android:textSize="29sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/notosanscjkkr_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="38dp"
+        android:id="@+id/speak_t1"
+        android:layout_marginLeft="24dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:id="@+id/speak_t2"
+        app:layout_constraintTop_toBottomOf="@id/speak_t1"
+        app:layout_constraintLeft_toLeftOf="@id/speak_t1"
+        android:layout_marginTop="6dp"
+
+        android:fontFamily="@font/notosanscjkkr_light"
+        android:text="화분과의 대화는 화분 기기를 통해 가능합니다."
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_speak_b1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speak_t2"/>
+</android.support.constraint.ConstraintLayout>

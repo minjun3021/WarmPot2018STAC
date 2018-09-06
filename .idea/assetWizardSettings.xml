@@ -14,11 +14,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="68" />
-                            <entry key="outputName" value="ic_connect_btn" />
+                            <entry key="height" value="255" />
+                            <entry key="outputName" value="ic_speak_b3" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\KMJ\Desktop\drawable\rectangle_9.svg" />
-                            <entry key="width" value="223" />
+                            <entry key="sourceFile" value="C:\Users\KMJ\Desktop\drawable\rectangle_4_copy_2.svg" />
+                            <entry key="width" value="191" />
                           </map>
                         </option>
                       </PersistentState>
