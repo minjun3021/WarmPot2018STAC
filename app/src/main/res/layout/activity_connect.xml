@@ -1,44 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_background"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
     tools:context=".connect">
 
     <TextView
+        android:id="@+id/connect_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/notosanscjkkr_black"
+
         android:text="기기 연동"
-        android:id="@+id/connect_text"
-        android:textSize="33sp"
         android:textColor="#ffffff"
+        android:textSize="33sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="49dp"
-        android:layout_marginLeft="28dp"
 
         />
+
+
     <ImageView
-        android:layout_width="wrap_content"
+        android:id="@+id/connect_oval"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_connect_circle"
-        app:layout_constraintBottom_toTopOf="@id/connect_oval"
+        android:layout_marginTop="191dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_connect_oval"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/connect_circle"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/shadow_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cornerRadius="200dp"
+        app:shadowColor="#17000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="124dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:shadowDy="6"
+        app:shadowMargin="6dp"
+        app:shadowRadius="6dp">
+
+
+        <ImageView
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:background="@drawable/circle"
+            android:paddingBottom="27dp"
+            android:paddingEnd="22dp"
+            android:paddingStart="23dp"
+            android:paddingTop="29dp"
+            android:src="@drawable/noun_devices_159064" />
+    </com.loopeer.shadow.ShadowView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="#2fec8c"
+        android:id="@+id/connect_t2"
+        app:layout_constraintTop_toBottomOf="@id/shadow_view"
+        android:fontFamily="@font/notosanscjkkr_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="63dp"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="제품의 코드를 입력해주세요."
         />
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/connect_oval"
-    android:src="@drawable/ic_connect_oval"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:layout_marginTop="191dp"
-    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#919191"
+        android:id="@+id/connect_t3"
+        app:layout_constraintTop_toBottomOf="@id/connect_t2"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="제품코드는 제품 하단 스티커에 있습니다."
+        />
+    <LinearLayout
+        android:layout_width=""
+        android:layout_height=""></LinearLayout>
 </android.support.constraint.ConstraintLayout>

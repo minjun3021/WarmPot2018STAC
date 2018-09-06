@@ -6,18 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".SettingsFragment">
 
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/settings_layout"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.constraint.ConstraintLayout>
     <TextView
         android:id="@+id/settings_t1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="24dp"
         android:fontFamily="@font/notosanscjkkr_black"
         android:text="설정"
         android:textColor="#5b5b5b"
         android:textSize="29sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@id/settings_layout"
+        app:layout_constraintTop_toTopOf="@id/settings_layout" />
 
     <ImageView
         android:id="@+id/settings_l1"
@@ -26,7 +33,7 @@
         android:layout_marginTop="11dp"
         android:src="@drawable/ic_settings_line"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_t1" />
+        app:layout_constraintTop_toBottomOf="@id/settings_layout" />
 
     <TextView
         android:id="@+id/settings_t2"
