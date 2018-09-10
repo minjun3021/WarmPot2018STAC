@@ -14,10 +14,10 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        notres=findViewById(R.id.login_t4);
-        notres.setText(R.string.login_text);
-        loginid=findViewById(R.id.login_id);
-        password=findViewById(R.id.login_pw);
+//        notres=findViewById(R.id.login_t4);
+//        notres.setText(R.string.login_text);
+//        loginid=findViewById(R.id.login_id);
+//        password=findViewById(R.id.login_pw);
 
     }
 }
