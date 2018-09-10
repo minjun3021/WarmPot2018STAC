@@ -4,89 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registerSelect"
-    android:background="@drawable/bg_background">
-    <LinearLayout
-        android:id="@+id/rs_layout"
-        android:layout_width="182dp"
-        android:layout_height="196dp"
+    android:background="@drawable/bg_background"
+    tools:context=".registerSelect">
 
+
+    <ImageView
+        android:id="@+id/rs_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pot"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:layout_marginTop="84dp">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pot"/>
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.25" />
+
     <TextView
-       android:id="@+id/rs_t1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/rs_t1"
         android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
         android:layout_height="wrap_content"
         android:text="따뜻한 화분"
-        android:fontFamily="@font/notosanscjkkr_black"
+        android:textColor="#ffffff"
         android:textSize="33sp"
-        android:textColor="#ffffff"
-        app:layout_constraintTop_toTopOf="@+id/rs_layout"
-        android:layout_marginTop="180dp"
-        app:layout_constraintBottom_toTopOf="@id/rs_t2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs_layout" />
 
-        />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/rs_t2"
-        android:text="우을증 예방 솔루션"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/rs_t1"
-        android:textColor="#ffffff"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/notosanscjkkr_medium"
-        app:layout_constraintBottom_toTopOf="@+id/rs_btn"
-        />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_rs_btn"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="62dp"
-        app:layout_constraintTop_toBottomOf="@id/rs_t2"
-        android:text="회원가입"
-        app:layout_constraintBottom_toTopOf="@+id/rs_kakaobtn"
-        android:id="@+id/rs_btn"
-        android:textSize="21sp"
-        android:fontFamily="@font/notosanscjkkr_black"
-        android:textColor="#30ec9f"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rs_kakaobtn"
-        android:background="@drawable/kakao_account_login_btn_medium_wide"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@id/rs_btn"
-        app:layout_constraintBottom_toTopOf="@+id/rs_already"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:text="우울증 예방 솔루션"
         android:textColor="#ffffff"
-        android:text="계정이 이미 있으신가요?"
+        android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/rs_t1" />
+
+    <Button
+        android:id="@+id/rs_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_rs_btn"
+        android:fontFamily="@font/notosanscjkkr_black"
+        android:text="회원가입"
+        android:textColor="#30ec9f"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/rs_kakaobtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs_t2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/rs_kakaobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/kakao_account_login_btn_medium_wide"
+        app:layout_constraintBottom_toTopOf="@+id/rs_already"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rs_btn" />
+
+    <TextView
         android:id="@+id/rs_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/notosanscjkkr_bold"
-        app:layout_constraintTop_toBottomOf="@id/rs_kakaobtn"
-        />
+        android:text="계정이 이미 있으신가요?"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rs_kakaobtn" />
 </android.support.constraint.ConstraintLayout>
