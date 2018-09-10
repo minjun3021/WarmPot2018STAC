@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="49dp"
-        android:fontFamily="@font/notosanscjkkr_black"
 
         android:text="기기 연동"
         android:textColor="#ffffff"
@@ -68,7 +67,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
-        android:fontFamily="@font/notosanscjkkr_black"
         android:text="제품의 코드를 입력해주세요."
         android:textColor="#2fec8c"
         android:textSize="23sp"
@@ -191,7 +189,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/connect_l1"
         android:text="기기 연동"
-        android:fontFamily="@font/notosanscjkkr_black"
         android:textSize="19sp"
         android:textColor="#ffffff"
         android:layout_marginTop="54dp"/>

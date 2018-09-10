@@ -13,7 +13,6 @@
         android:text="화분과의 대화"
         android:textSize="29sp"
         android:textColor="#fff"
-        android:fontFamily="@font/notosanscjkkr_black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="38dp"
@@ -31,7 +30,6 @@
         app:layout_constraintLeft_toLeftOf="@id/speak_t1"
         android:layout_marginTop="6dp"
 
-        android:fontFamily="@font/notosanscjkkr_light"
         android:text="화분과의 대화는 화분 기기를 통해 가능합니다."
         />
     <ImageView
