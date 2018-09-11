@@ -1,28 +1,28 @@
 package com.example.kmj.warmpot_2018stac;
 
 public class LoginModel {
-    private String token;
-    private String auth_type;
+    private int status;
+    private LoginData data;
 
-    public String getToken() {
-        return token;
+    public int getStatus() {
+        return status;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public String getAuth_type() {
-        return auth_type;
+    public LoginData getData() {
+        return data;
     }
 
-    public void setAuth_type(String auth_type) {
-        this.auth_type = auth_type;
+    public void setData(LoginData data) {
+        this.data = data;
     }
 
-    public LoginModel(String token, String auth_type) {
+    public LoginModel(int status, LoginData data) {
+        this.status = status;
 
-        this.token = token;
-        this.auth_type = auth_type;
+        this.data = data;
     }
 }

@@ -187,6 +187,7 @@
         android:hint="20020101"
         android:textColor="#242424"
         android:textSize="18sp"
+        android:inputType="number"
         app:layout_constraintLeft_toLeftOf="@id/rg_t1"
         app:layout_constraintRight_toRightOf="@id/rg_longline1"
         app:layout_constraintTop_toBottomOf="@id/rg_t4" />

@@ -19,7 +19,8 @@
         android:paddingTop="28.5dp"
         android:src="@drawable/pot"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_rec"/>
 
     <TextView
         android:id="@+id/login_t1"
@@ -30,6 +31,7 @@
         android:textColor="#fff"
         android:textSize="33sp"
         android:textStyle="bold"
+
         app:layout_constraintLeft_toRightOf="@+id/login_pot"
         app:layout_constraintTop_toTopOf="@id/login_pot" />
 
@@ -41,6 +43,7 @@
         android:text="우울증 예방 솔루션"
         android:textColor="#fff"
         android:textSize="18sp"
+
         app:layout_constraintLeft_toRightOf="@+id/login_pot"
         app:layout_constraintTop_toBottomOf="@+id/login_t1" />
 

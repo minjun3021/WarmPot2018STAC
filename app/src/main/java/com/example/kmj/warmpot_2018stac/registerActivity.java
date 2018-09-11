@@ -1,6 +1,9 @@
 package com.example.kmj.warmpot_2018stac;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Network;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,7 +21,7 @@ import retrofit2.Response;
 public class registerActivity extends AppCompatActivity {
     RadioButton b0, b1;
     RadioGroup rg;
-    String gender;
+    String gender, token;
     Button res;
     EditText name, birth, res_id, pass, passcheck;
 
@@ -56,6 +59,18 @@ public class registerActivity extends AppCompatActivity {
                         if (status == 200) {
                             Toast.makeText(getApplicationContext(), "회원가입이 정상적으로 완료되었습니다.", Toast.LENGTH_SHORT).show();
                             Log.e("qwer", response.body().getData().getToken());
+                            token = response.body().getData().getToken();
+                            savePreferences();
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Intent intent = new Intent(registerActivity.this, Login.class);
+                                    startActivity(intent);
+                                    finish();
+
+                                }
+                            }, 700);
+
                         } else if (status == 401) {
                             Toast.makeText(getApplicationContext(), "이미존재하는 아이디입니다.", Toast.LENGTH_SHORT).show();
                         }
@@ -70,5 +85,16 @@ public class registerActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void savePreferences() {
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("id", res_id.getText().toString());
+        editor.putString("password", pass.getText().toString());
+        editor.putString("name", name.getText().toString());
+        editor.putString("gender", gender);
+        editor.putString("token", token);
+        editor.commit();
     }
 }
