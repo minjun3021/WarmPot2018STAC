@@ -1,18 +1,37 @@
 package com.example.kmj.warmpot_2018stac;
 
 public class RegisterModel {
-    private String token;
+     private int status;
+     private TokenData data;
 
-    public String getToken() {
-        return token;
+    public int getStatus() {
+        return status;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public RegisterModel(String token) {
+    public TokenData getData() {
+        return data;
+    }
 
-        this.token = token;
+    public void setData(TokenData data) {
+        this.data = data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    private String message;
+    public RegisterModel(int statis, TokenData data,String message) {
+        this.message = message;
+        this.status = statis;
+        this.data = data;
     }
 }

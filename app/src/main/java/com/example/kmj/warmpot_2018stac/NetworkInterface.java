@@ -12,5 +12,9 @@ interface NetworkInterface {
 
     @POST("/auth/register")
     @FormUrlEncoded
-    Call<RegisterModel> Register(@Field("id") String id,@Field("password") String password,@Field("name") String name,@Field("gender") String gender,@Field("auth_type") String type);
+    Call<RegisterModel> Register(@Field("id") String id
+            ,@Field("password") String password
+            ,@Field("name") String name
+            ,@Field("gender") String gender
+            ,@Field("auth_type") String type);
 }

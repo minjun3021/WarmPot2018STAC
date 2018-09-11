@@ -3,12 +3,17 @@ package com.example.kmj.warmpot_2018stac;
 import android.net.Network;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class registerActivity extends AppCompatActivity {
     RadioButton b0, b1;
@@ -30,7 +35,7 @@ public class registerActivity extends AppCompatActivity {
         res_id = findViewById(R.id.rg_input_id);
         pass = findViewById(R.id.rg_input_pw);
         passcheck = findViewById(R.id.rg_input_pwcheck);
-
+        gender = "남자";
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int i) {
@@ -44,7 +49,23 @@ public class registerActivity extends AppCompatActivity {
         res.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(registerActivity.this, name.getText()+gender+birth.getText()+res_id.getText()+pass.getText(), Toast.LENGTH_SHORT).show();
+                NetworkHelper.getInstance().Register(res_id.getText().toString(), pass.getText().toString(), name.getText().toString(), gender, "ward").enqueue(new Callback<RegisterModel>() {
+                    @Override
+                    public void onResponse(Call<RegisterModel> call, Response<RegisterModel> response) {
+                        int status = response.body().getStatus();
+                        if (status == 200) {
+                            Toast.makeText(getApplicationContext(), "회원가입이 정상적으로 완료되었습니다.", Toast.LENGTH_SHORT).show();
+                            Log.e("qwer", response.body().getData().getToken());
+                        } else if (status == 401) {
+                            Toast.makeText(getApplicationContext(), "이미존재하는 아이디입니다.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<RegisterModel> call, Throwable t) {
+
+                    }
+                });
             }
         });
 
