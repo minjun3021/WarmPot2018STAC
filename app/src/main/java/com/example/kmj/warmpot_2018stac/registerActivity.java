@@ -94,6 +94,7 @@ public class registerActivity extends AppCompatActivity {
         editor.putString("password", pass.getText().toString());
         editor.putString("name", name.getText().toString());
         editor.putString("gender", gender);
+        editor.putInt("login",0);
         editor.putString("token", token);
         editor.commit();
     }

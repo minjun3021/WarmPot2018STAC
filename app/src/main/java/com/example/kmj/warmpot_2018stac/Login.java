@@ -1,6 +1,8 @@
 package com.example.kmj.warmpot_2018stac;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,6 +41,20 @@ public class Login extends AppCompatActivity {
                         if(status==200){
                             Toast.makeText(Login.this, "로그인 되었습니다.", Toast.LENGTH_SHORT).show();
                             Log.e("login",response.body().getData().getToken());
+                            SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+                            SharedPreferences.Editor editor = pref.edit();
+                            editor.putInt("login",1);
+                            editor.commit();
+
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Intent intent=new Intent(Login.this,connect.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            }, 1000);
+
                         }
                         else if(status==401){
                             Toast.makeText(Login.this, "아이디 또는 비밀번호를 다시 확인 하세요.", Toast.LENGTH_SHORT).show();

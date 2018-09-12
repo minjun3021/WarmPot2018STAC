@@ -19,13 +19,13 @@ public class BackPressCloseHandler {
             return;
         }
         if (System.currentTimeMillis() <= backKeyPressedTime + 2000) {//백버튼 누른 시점에서 부터 2초가 안지나면 실행
-            activity.finish();
+            android.os.Process.killProcess(android.os.Process.myPid());
             toast.cancel();
         }
     }
 
     public void showGuide() {
-        toast = Toast.makeText(activity, "\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT);
+        toast = Toast.makeText(activity, "한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT);
         toast.show();
     }
 }
