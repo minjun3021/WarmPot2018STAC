@@ -28,6 +28,7 @@
         android:text="따뜻한 화분"
         android:textColor="#ffffff"
         android:textSize="33sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/splash_text2"
         app:layout_constraintLeft_toLeftOf="parent"
 
