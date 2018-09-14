@@ -6,46 +6,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_background"
     tools:context=".activity.Login">
-
     <ImageView
-        android:id="@+id/login_pot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="62dp"
-        android:paddingBottom="28.5dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="28.5dp"
-        android:src="@drawable/pot"
+        android:src="@drawable/group"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/login_rec"/>
-
-    <TextView
-        android:id="@+id/login_t1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="따뜻한 화분"
-        android:textColor="#fff"
-        android:textSize="33sp"
-        android:textStyle="bold"
-
-        app:layout_constraintLeft_toRightOf="@+id/login_pot"
-        app:layout_constraintTop_toTopOf="@id/login_pot" />
-
-    <TextView
-        android:id="@+id/login_t2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="우울증 예방 솔루션"
-        android:textColor="#fff"
-        android:textSize="18sp"
-
-        app:layout_constraintLeft_toRightOf="@+id/login_pot"
-        app:layout_constraintTop_toBottomOf="@+id/login_t1" />
 
     <ImageView
         android:id="@+id/login_rec"
