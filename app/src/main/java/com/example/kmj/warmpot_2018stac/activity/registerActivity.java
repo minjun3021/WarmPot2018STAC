@@ -1,8 +1,7 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Network;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +12,10 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.example.kmj.warmpot_2018stac.retrofit.NetworkHelper;
+import com.example.kmj.warmpot_2018stac.R;
+import com.example.kmj.warmpot_2018stac.data.RegisterModel;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -1,4 +1,4 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.data;
 
 public class LoginModel {
     private int status;

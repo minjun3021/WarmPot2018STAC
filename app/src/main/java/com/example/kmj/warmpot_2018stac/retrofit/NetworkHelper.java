@@ -1,4 +1,4 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.retrofit;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

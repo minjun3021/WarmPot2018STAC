@@ -17,21 +17,21 @@
 
             android:value="@string/kakao_app_key" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
 
         </activity>
-        <activity android:name=".Splash">
+        <activity android:name=".activity.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"></activity>
-        <activity android:name=".registerSelect"></activity>
+        <activity android:name=".activity.Login"></activity>
+        <activity android:name=".activity.registerSelect"></activity>
 
-        <activity android:name=".connect"></activity>
-        <activity android:name=".registerActivity"></activity>
+        <activity android:name=".activity.connect"></activity>
+        <activity android:name=".activity.registerActivity"></activity>
     </application>
 
 </manifest>

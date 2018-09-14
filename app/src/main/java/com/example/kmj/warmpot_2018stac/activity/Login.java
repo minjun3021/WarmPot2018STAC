@@ -1,4 +1,4 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.kmj.warmpot_2018stac.retrofit.NetworkHelper;
+import com.example.kmj.warmpot_2018stac.R;
+import com.example.kmj.warmpot_2018stac.data.LoginModel;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,7 +47,8 @@ public class Login extends AppCompatActivity {
                             Log.e("login",response.body().getData().getToken());
                             SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
                             SharedPreferences.Editor editor = pref.edit();
-                            editor.putInt("login",1);
+                            editor.putInt("login", 1);
+                            editor.putInt("kakao",0);
                             editor.commit();
 
                             new Handler().postDelayed(new Runnable() {

@@ -1,10 +1,11 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.activity;
 
         import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.util.Log;
 
+        import com.example.kmj.warmpot_2018stac.R;
         import com.kakao.auth.ISessionCallback;
         import com.kakao.auth.Session;
         import com.kakao.network.ErrorResult;

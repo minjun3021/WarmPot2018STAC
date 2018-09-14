@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_background"
-    tools:context=".registerActivity">
+    tools:context=".activity.registerActivity">
 
     <LinearLayout
         android:id="@+id/rg_pot"

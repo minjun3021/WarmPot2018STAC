@@ -1,4 +1,6 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.data;
+
+import com.example.kmj.warmpot_2018stac.data.TokenData;
 
 public class RegisterModel {
      private int status;

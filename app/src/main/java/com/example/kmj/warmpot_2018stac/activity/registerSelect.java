@@ -1,14 +1,18 @@
-package com.example.kmj.warmpot_2018stac;
+package com.example.kmj.warmpot_2018stac.activity;
 
-import android.app.ActivityManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.kmj.warmpot_2018stac.BackPressCloseHandler;
+import com.example.kmj.warmpot_2018stac.R;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
 import com.kakao.network.ErrorResult;
@@ -81,6 +85,26 @@ public class registerSelect extends AppCompatActivity {
                 // TODO 나중에 서버 연동할떄 서버에 보낼 access_token값
                 String access_token = Session.getCurrentSession().getTokenInfo().getAccessToken();
                 Log.e("token", access_token);
+
+                Toast.makeText(registerSelect.this, "로그인 되었습니다.", Toast.LENGTH_SHORT).show();
+
+                SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+                SharedPreferences.Editor editor = pref.edit();
+                editor.putInt("login", 0);
+                editor.putInt("kakao",1);
+                editor.putString("kakaotoken",access_token);
+                editor.commit();
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(registerSelect.this, connect.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 1000);
+
+
             }
         });
     }
