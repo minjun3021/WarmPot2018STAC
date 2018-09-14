@@ -60,17 +60,17 @@
         app:layout_constraintTop_toBottomOf="@+id/rs_t2"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+
+
+    <com.kakao.usermgmt.LoginButton
         android:id="@+id/rs_kakaobtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/kakao_account_login_btn_medium_wide"
         app:layout_constraintBottom_toTopOf="@+id/rs_already"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/rs_btn"
+        app:layout_constraintRight_toRightOf="@+id/rs_btn"
         app:layout_constraintTop_toBottomOf="@id/rs_btn" />
-
     <TextView
         android:id="@+id/rs_already"
         android:layout_width="wrap_content"
